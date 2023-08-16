@@ -188,8 +188,7 @@ img {
     background-color: var(--pink-claro);
     padding: 8px 10px;
   }
-  
-  /* Style the header links */
+
   .header a {
     float: left;
     color: black;
@@ -198,18 +197,15 @@ img {
     text-decoration: none;
   }
   
-  /* Change the background color on mouse-over */
   .header a:hover {
     color: var(--first-color);
     text-decoration: none;
   }
-  
-  /* Float the link section to the right */
+
   .header-right {
     float: right;
   }
   
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
@@ -220,11 +216,6 @@ img {
       float: none;
     }
   }
-
-/* Active link */
-
-
-/* Change background header */
 
 
 /*==================== HOME ====================*/
@@ -637,20 +628,5 @@ img {
     text-align: center;
     color: #fff;
 }
-/*========== SCROLL UP ==========*/
-/* Show scroll */
-
-
-/*========== SCROLL BAR ==========*/
-
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
 
 
