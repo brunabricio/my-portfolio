@@ -19,7 +19,6 @@
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --contact-color: hsl(var(--hue-color), 70%, 94%);
     --pink-claro: hsl(var(--hue-color), 70%, 97%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
@@ -71,11 +70,6 @@
         --smaller-font-size: .813rem;
     }
 }
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== Button Dark/Light ==========*/
 
 
 /*==================== BASE ====================*/
@@ -140,8 +134,8 @@ img {
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin: 0 auto; 
+  padding: 0 var(--mb-1-5); 
 }
 
 .grid {
@@ -155,6 +149,9 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--pink-claro);
+    overflow: hidden;
+    background-color: var(--pink-claro);
+    padding: 8px 10px;
 }
 
 
@@ -183,17 +180,11 @@ img {
 
 } 
 
-.header {
-    overflow: hidden;
-    background-color: var(--pink-claro);
-    padding: 8px 10px;
-  }
-
   .header a {
     float: left;
     color: black;
     text-align: center;
-    padding: 12px;
+    padding: 8px;
     text-decoration: none;
   }
   
@@ -217,31 +208,26 @@ img {
     }
   }
 
+/* Active link */
+
+
+/* Change background header */
+
 
 /*==================== HOME ====================*/
 .home__container {
     gap: 1rem;
-}
-
-.home__content {
-    grid-template-columns: .1fr 1fr;
-    padding-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
+.home__content {
+    padding-top: 3.5rem;
+}
+
 .home__social {
-    display: grid;
     grid-template-columns: max-content;
-    row-gap: 1rem;
-}
-
-.home__social-icon {
-    font-size: 1.25rem;
-    color: var(--first-color);
-}
-
-.home__social-icon:hover {
-    color: var(--first-color-alt);
 }
 
 .home__blob {
@@ -269,37 +255,50 @@ img {
 
 .home__description {
     margin-bottom: var(--mb-2);
-    max-width: 800px;
+    max-width: 550px;
 
 }
 
-.home__scroll {
-     display: none;
+@media screen and (max-width: 768px) {
+    .home__container {
+        grid-template-columns: 1fr;
+    }
+
+    .home__content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home__social {
+        text-align: center;
+    }
+
+    .home__blob {
+        width: 150px;
+        margin-top: 2rem;
+    }
+
+    .home__title {
+        margin-top: 1rem;
+    }
 }
 
-.home__scroll-button {
-    color: var(--first-color);
-    transition: .3s;
+/* Estilos para telas médias e grandes (desktop) */
+@media screen and (min-width: 769px) {
+    .home__content {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: start;
+    }
+
+    .home__blob {
+        justify-self: end; 
+        margin-top: 0; 
+    }
 }
 
-.home__scroll-button:hover {
-    transform: translateY(.25rem);
-}
-
-.house__scrool-mouse {
-    font-size: 2rem;
-}
-
-.house__scroll-name {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-}
-
-.home__scroll-arrow {
-    font-size: 1.25rem;
-}
 /*==================== BUTTONS ====================*/
 .button {
     display: inline;
@@ -332,7 +331,6 @@ img {
 }
 
 /*==================== ABOUT ====================*/
-
 .about__img {
     width: 200px;
     border-radius: .5rem;
@@ -608,14 +606,6 @@ img {
     padding: 2rem 0 3rem;
 }
 
-.footer__title {
-    font-size: var(--h1-font-size);
-}
-
-.footer__link:hover {
-    color: var(--first-color-lighter)
-}
-
 .footer__love {
     font-size: var(--font-medium);
     text-align: center;
@@ -628,5 +618,3 @@ img {
     text-align: center;
     color: #fff;
 }
-
-
