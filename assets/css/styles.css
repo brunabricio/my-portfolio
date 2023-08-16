@@ -84,7 +84,6 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -544,13 +543,6 @@ img {
     transform: translate(6px, -7px);
 }
 
-.qualification [data-content] {
-    display: none;
-}
-
-.qualification__active[data-content] {
-    display: block; 
-}
 
 /*==================== PORTFOLIO ====================*/
 
@@ -594,16 +586,8 @@ img {
 }
 /*==================== FOOTER ====================*/
 .footer {
-    padding-top: 2rem;
-}
-
-.footer__container {
-    row-gap: 3.5rem;
-}
-
-.footer__bg {
+    padding: 2rem 1rem 3rem;
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
 }
 
 .footer__love {
