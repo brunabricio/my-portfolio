@@ -14,7 +14,9 @@ const skillsContent = document.getElementsByClassName('skills__content'),
             this.parentNode.className = 'skills__content skills__open';
         }
     }
+
 /*==================== OPEN NAV MENU ====================*/
+
 function openNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
