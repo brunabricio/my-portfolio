@@ -104,6 +104,11 @@ a {
   color: var(--title-color);
 }
 
+b {
+    margin-left: -4px;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
