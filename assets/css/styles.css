@@ -270,6 +270,25 @@ img {
 
 }
 
+.home__title {
+    margin-top: 1rem;
+}
+
+.home__title::after {
+    content: '|';
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .home__container {
         grid-template-columns: 1fr;
@@ -289,26 +308,6 @@ img {
     .home__blob {
         width: 150px;
         margin-top: 2rem;
-    }
-
-    .home__title {
-        margin-top: 1rem;
-    }
-
-    .home__title::after {
-        content: '|';
-        margin-left: 3px;
-        opacity: 1;
-        animation: blink .7s infinite;
-    }
-
-    @keyframes blink {
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
     }
 }
 
@@ -747,3 +746,4 @@ img {
     text-align: center;
     color: #fff;
 }
+
