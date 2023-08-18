@@ -10,22 +10,29 @@ function typeWriter (element) {
 const title = document.querySelector('h1');
 typeWriter(title);
 
+
+
 /*==================== ACCORDION SKILLS ====================*/
 
-const skillsContent = document.getElementsByClassName("skills__content"),
-  skillsHeader = document.querySelectorAll(".skills__header");
+const skillsContent = document.getElementsByClassName('skills__content'),
+  skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
 
   for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills__content skills__close";
+    skillsContent[i].className = 'skills__content skills__close';
   }
 
-  if (itemClass === "skills__content skills__close") {
-    this.parentNode.className = "skills__content skills__open";
+  if (itemClass === 'skills__content skills__close') {
+    this.parentNode.className = 'skills__content skills__open';
   }
 }
+
+skillsHeader.forEach((el) => {
+el.addEventListener('click', toggleSkills)
+
+})
 
 /*==================== OPEN NAV MENU ====================*/
 
