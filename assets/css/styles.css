@@ -221,8 +221,7 @@ img {
   }
 
 .nav__logo {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    min-width: 300px;
 } 
 
 /*==================== HOME ====================*/
@@ -240,6 +239,25 @@ img {
 .home__social {
     grid-template-columns: max-content;
 }
+
+.home__img {
+    max-height: 180px;  
+    width: 250px;  
+    margin-bottom: 80px;
+    animation: bounce 2.5s;  
+    animation-direction: alternate;  
+    animation-timing-function: cubic-bezier(0.2, 0.2, 0.2, 0.2);  
+    animation-iteration-count: infinite;  
+}
+
+@keyframes bounce {  
+    from {  
+      transform: translate3d(0, 0, 0);  
+    }  
+    to {  
+      transform: translate3d(0, 20px, 0);  
+    }  
+  }  
 
 .home__blob {
     width: 250px;
@@ -306,7 +324,7 @@ img {
     }
 
     .home__blob {
-        width: 150px;
+        width: 250px;
         margin-top: 2rem;
     }
 }
@@ -746,3 +764,4 @@ img {
     text-align: center;
     color: #fff;
 }
+
