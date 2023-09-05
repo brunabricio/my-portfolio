@@ -23,6 +23,9 @@
     </a>
   </div>
 
+
+
+
     <main class="main">
       <section class="home section" id="home">
         <div class="home__container container grid">
@@ -31,10 +34,7 @@
               <h1 class="home__title">Olá, eu sou Bruna Bricio</h1>
               <h3 class="home__subtitle">Frontend developer</h3>
               <p class="home__description">
-                Desenvolvedora Frontend altamente motivada com sólida
-                compreensão das tecnologias web modernas e experiência prática
-                no desenvolvimento de interfaces de usuário atraentes e
-                responsivas.
+                Navegando pelo encantador mundo do frontend, mesclando códigos como poções em busca do pixel perfeito. Como alquimista, utilizo HTML, CSS e JavaScript para criar interfaces mágicas.
               </p>
               <div>
                 <button class="button button--flex">
@@ -44,35 +44,8 @@
             </div>
 
             <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="12"
-                    y="18"
-                    href="assets/img/perfil.png"
-                  />
-                </g>
-              </svg>
+            <img class="home__img__radius" src="assets/img/perfil.png">
+            </div>
             </div>
           </div>
         </div>
@@ -270,7 +243,6 @@
         </div>
       </section>
 
-<!--
       <section class="qualification section" id="qualificacoes">
         <h2 class="section__title">Qualificações</h2>
 
@@ -283,11 +255,6 @@
               <i class="bi bi-mortarboard qualification__icon"></i>
               Formação Acadêmica
             </div>
-
-            <div class="qualification__button button--flex">
-              <i class="bi bi-bag qualification__icon"></i>
-              Cursos
-            </div>
           </div>
 
           <div class="qualification__section">
@@ -298,70 +265,47 @@
             >
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Analista de Sistemas</h3>
-                  <span class="qualification__subtitle">PUC</span>
+                  <h3 class="qualification__title">Análise de Sistemas</h3>
+                  <span class="qualification__subtitle">PUC - Pontifice Universidade Católica</span>
                   <div class="qualification__calendar">
                     <i class="bi bi-calendar-heart"></i>
-                    2023 - 2023
+                    2023 - Atualmente
                   </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rouder"></span>
-                  <span class="qualification__line"></span>
                 </div>
               </div>
 
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">BCMT</h3>
-                  <span class="qualification__subtitle">UFRJ</span>
+                  <h3 class="qualification__title">BCMT - Bacharel em Ciências Matemáticas e da Terra</h3>
+                  <span class="qualification__subtitle">UFRJ - Universidade Federal do Rio de Janeiro</span>
                   <div class="qualification__calendar">
                     <i class="bi bi-calendar-heart"></i>
-                    2021 - 2023
+                    2021 - Trancado
                   </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rouder"></span>
-                  <span class="qualification__line"></span>
                 </div>
               </div>
 
-
-
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Frontend Developer</h3>
-                  <span class="qualification__subtitle"
-                    >Open e Inner Source - Itau Unibanco</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="bi bi-calendar-heart"></i>
-                    jan 2023 - Atual
-                  </div>
+              <div class="qualification__tabs">
+                <div
+                  class="qualification__button button--flex"
+                  data-target="#courses"
+                >
+                  <i class="bi bi-mortarboard qualification__icon"></i>
+                  Cursos
                 </div>
-
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Frontend Developer</h3>
-                  <span class="qualification__subtitle"
-                    >Developer Advocate - Itaú Unibanco</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="bi bi-calendar-heart"></i>
-                    jun 2021 - jan 2023
-                  </div>
+              </div>
+              <div>
+                <h3 class="qualification__title">BCMT - Bacharel em Ciências Matemáticas e da Terra</h3>
+                <span class="qualification__subtitle">UFRJ - Universidade Federal do Rio de Janeiro</span>
+                <div class="qualification__calendar">
+                  <i class="bi bi-calendar-heart"></i>
+                  2021 - Trancado
                 </div>
-
-              <div class="qualification__data">
-
               </div>
             </div>
           </div>
         </div>
       </section>
--->
 
       <section class="portfolio section" id="portfolio">
           <h2 class="section__title">Portfolio</h2>
@@ -398,6 +342,7 @@
                 </div>
           </div>      
       </section>
+
 
       <section class="contact section" id="contact">
         <h2 class="section__title">Contato</h2>
