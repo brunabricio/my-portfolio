@@ -73,6 +73,8 @@
 
 
 /*==================== BASE ====================*/
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -89,6 +91,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+
 
 h1, h2, h3, h4 {
   color: var(--title-color);
@@ -115,7 +118,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 4rem 0 4rem;
 }
 
 .section__title {
@@ -224,6 +227,7 @@ img {
     min-width: 300px;
 } 
 
+
 /*==================== HOME ====================*/
 .home__container {
     gap: 1rem;
@@ -236,14 +240,16 @@ img {
     padding-top: 3.5rem;
 }
 
+
 .home__social {
+    display: grid;
     grid-template-columns: max-content;
+    row-gap: 1rem;
 }
 
 .home__img {
-    max-height: 180px;  
-    width: 250px;  
-    margin-bottom: 80px;
+    width: 300px;  
+    margin-bottom: 10px;
     animation: bounce 2.5s;  
     animation-direction: alternate;  
     animation-timing-function: cubic-bezier(0.2, 0.2, 0.2, 0.2);  
@@ -259,17 +265,14 @@ img {
     }  
   }  
 
-.home__blob {
-    width: 250px;
-    fill: var(--first-color);
+.home__img__radius {
+    max-width: 300px;
+    background-color: var(--first-color);
+    border-radius: 50%;
 }
 
-.home__blob:hover {
-    fill: var(--first-color-alt);
-}
-
-.home__blob-img {
-    width: 185px;
+.home__img__radius:hover {
+    background-color: var(--first-color-alt);
 }
 
 .home__data {
@@ -375,6 +378,7 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+
 .about__img {
     width: 200px;
     border-radius: .5rem;
@@ -558,12 +562,8 @@ img {
 .qualification__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer;
 }
 
-.qualification__button:hover {
-    color: var(--first-color)
-}
 
 .qualification__icon {
     font-size: 1.8rem;
@@ -572,7 +572,6 @@ img {
 
 .qualification__data {
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
@@ -590,22 +589,6 @@ img {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-bottom: var(--mb-1);
-}
-
-.qualification__rouder {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-}
-
-.qualification__line {
-    display: block;
-    width: 2px;
-    height: 100%;
-    background-color: var(--first-color);
-    transform: translate(6px, -7px);
 }
 
 
@@ -764,4 +747,3 @@ img {
     text-align: center;
     color: #fff;
 }
-
