@@ -192,7 +192,7 @@ img {
   }
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -201,7 +201,7 @@ img {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -424,129 +424,129 @@ img {
 
 
 
-/*==================== SKILLS ====================*/
+/*==================== accordion ====================*/
 
-.skills__container {
+.accordion__container {
     row-gap: 0;
 }
 
-.skills__header {
+.accordion__header {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
 
-.skills__icon,
-.skills__arrow {
+.accordion__icon,
+.accordion__arrow {
     font-size: 2rem;
     color:var(--first-color)
 }
 
-.skills__icon {
+.accordion__icon {
     margin-right: var(--mb-0-75);
 }
 
-.skills__title {
+.accordion__title {
     font-size: var(--h3-font-size);
 }
 
-.skills__subtitle {
+.accordion__subtitle {
     font-size: var(--small-font-size);
     color: var(--text-color-light)
 }
 
-.skills__arrow {
+.accordion__arrow {
     margin-left: auto;
     transition: .4s;
 }
 
-.skills__list {
+.accordion__list {
     row-gap: 1.5rem;
 }
 
-.skills__titles {
+.accordion__titles {
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
 }
 
-.skills__name {
+.accordion__name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
-.skills__bar,
-.skills__percentage {
+.accordion__bar,
+.accordion__percentage {
     height: 5px;
     border-radius: .25rem;
 }
 
-.skills__bar {
+.accordion__bar {
     background-color: #f8ecf9;
 }
 
-.skills__percentage {
+.accordion__percentage {
     display: block;
     background-color: var(--first-color);
 }
 
-.skills__html {
+.accordion__html {
     width: 90%;
 }
 
-.skills__css {
+.accordion__css {
     width: 70%;
 }
 
-.skills__js {
+.accordion__js {
     width: 50%;
 }
 
-.skills__angular {
+.accordion__angular {
     width: 50%;
 }
 
-.skills__ts {
+.accordion__ts {
     width: 30%;
 }
 
-.skills__git {
+.accordion__git {
     width: 40%;
 }
 
-.skills__comunicacao {
+.accordion__comunicacao {
     width: 90%;
 }
 
-.skills__colab {
+.accordion__colab {
     width: 80%;
 }
 
-.skills__flex {
+.accordion__flex {
     width: 80%;
 }
 
-.skills__resolution {
+.accordion__resolution {
     width: 85%;
 }
 
-.skills__organizacao {
+.accordion__organizacao {
     width: 70%;
 }
 
-.skills__close .skills__list {
+.accordion__close .accordion__list {
     height: 0;
     overflow: hidden;
 
 }
 
-.skills__open .skills__list {
+.accordion__open .accordion__list {
     height: max-content;
     margin-bottom: var(--mb-2-5);
 }
 
-.skills__open .skills__arrow {
+.accordion__open .accordion__arrow {
     transform: rotate(-180deg);
 }
 
@@ -577,6 +577,12 @@ img {
 .qualification__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualification__title a:hover {
+    color: var(--first-color);
+    transition: 1s;
 }
 
 .qualification__subtitle {

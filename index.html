@@ -16,7 +16,7 @@
     <a href="#default" class="nav__logo">Bruna <b>Bricio</b></a>
     <a href="#home" class="nav__item">Home</a>
     <a href="#sobreMim" class="nav__item">Sobre</a>
-    <a href="#skills" class="nav__item">Skills</a>
+    <a href="#accordion" class="nav__item">Skills</a>
     <a href="#portfolio" class="nav__item">Portfolio</a>
     <a href="#contact" class="nav__item">Contato</a>
     <a href="javascript:void(0);" class="icon" onclick="openNav()">
@@ -29,7 +29,7 @@
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="about__data">
-              <h1 class="home__data">Olá, eu sou Bruna Bricio</h1>
+              <h1 class="home__title">Olá, eu sou Bruna Bricio</h1>
               <h3 class="home__subtitle">Frontend developer</h3>
               <p class="home__description">
                 Desenvolvedora Frontend apaixonada por transformar designs em experiências digitais envolventes. Especialista em HTML, CSS e JavaScript, focada em usabilidade e design responsivo. Comprometida em criar interfaces que cativam e facilitam a vida dos usuários.
@@ -94,145 +94,145 @@
         </div>
       </section>
 
-      <section class="skills section" id="skills">
+      <section class="accordion section" id="accordion">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">Meu Nível Técnico</span>
 
-        <div class="skills__container container grid">
+        <div class="accordion__container container grid">
           <div>
-            <!-- TECH SKILLS -->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="bi bi-code-slash skills__icon"></i>
+            <!-- TECH accordion -->
+            <div class="accordion__content accordion__open">
+              <div class="accordion__header">
+                <i class="bi bi-code-slash accordion__icon"></i>
                 <div>
-                  <h2 class="skills__title">Frontend Developer</h2>
-                  <span class="skills__subtitle"> 4 anos de experiência </span>
+                  <h2 class="accordion__title">Frontend Developer</h2>
+                  <span class="accordion__subtitle"> 4 anos de experiência </span>
                 </div>
 
-                <i class="bi bi-arrow-down-short skills__arrow"></i>
+                <i class="bi bi-arrow-down-short accordion__arrow"></i>
               </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__number">90%</span>
+              <div class="accordion__list grid">
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">HTML</h3>
+                    <span class="accordion__number">90%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__html"></span>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">50%</span>
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">CSS</h3>
+                    <span class="accordion__number">70%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">TypeScript</h3>
-                    <span class="skills__number">30%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__ts"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__css"></span>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Angular</h3>
-                    <span class="skills__number">50%</span>
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">JavaScript</h3>
+                    <span class="accordion__number">50%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__angular"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__js"></span>
                   </div>
                 </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__number">40%</span>
+
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">TypeScript</h3>
+                    <span class="accordion__number">30%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__git"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__ts"></span>
+                  </div>
+                </div>
+
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Angular</h3>
+                    <span class="accordion__number">50%</span>
+                  </div>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__angular"></span>
+                  </div>
+                </div>
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Git</h3>
+                    <span class="accordion__number">40%</span>
+                  </div>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__git"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <!----------------------- PERSONAL SKILLS ----------------------------->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="bi bi-people skills__icon"></i>
+            <!----------------------- PERSONAL accordion ----------------------------->
+            <div class="accordion__content accordion__close">
+              <div class="accordion__header">
+                <i class="bi bi-people accordion__icon"></i>
                 <div>
-                  <h2 class="skills__title">Soft Skills</h2>
-                  <span class="skills__subtitle"> Habilidades Comportamentais  </span>
+                  <h2 class="accordion__title">Soft Skills</h2>
+                  <span class="accordion__subtitle"> Habilidades Comportamentais  </span>
                 </div>
 
-                <i class="bi bi-arrow-down-short skills__arrow"></i>
+                <i class="bi bi-arrow-down-short accordion__arrow"></i>
               </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Comunicação Eficaz</h3>
-                    <span class="skills__number">90%</span>
+              <div class="accordion__list grid">
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Comunicação Eficaz</h3>
+                    <span class="accordion__number">90%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__comunicacao"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Colaboração</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__colab"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__comunicacao"></span>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Flexibilidade</h3>
-                    <span class="skills__number">80%</span>
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Colaboração</h3>
+                    <span class="accordion__number">80%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__flex"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Resolução de Conflitos</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__resolution"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__colab"></span>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Organização</h3>
-                    <span class="skills__number">70%</span>
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Flexibilidade</h3>
+                    <span class="accordion__number">80%</span>
                   </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__organizacao"></span>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__flex"></span>
+                  </div>
+                </div>
+
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Resolução de Conflitos</h3>
+                    <span class="accordion__number">85%</span>
+                  </div>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__resolution"></span>
+                  </div>
+                </div>
+
+                <div class="accordion__data">
+                  <div class="accordion__titles">
+                    <h3 class="accordion__name">Organização</h3>
+                    <span class="accordion__number">70%</span>
+                  </div>
+                  <div class="accordion__bar">
+                    <span class="accordion__percentage accordion__organizacao"></span>
                   </div>
                 </div>
               </div>
@@ -292,12 +292,131 @@
                   Cursos
                 </div>
               </div>
-              <div>
-                  <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Google Certificate.pdf">Foundations of User Experience (UX) Design</a></h3>
-                <span class="qualification__subtitle">Google</span>
-                <div class="qualification__calendar">
-                  <i class="bi bi-calendar-heart"></i>
-                  26/05/ 2021
+              <div class="accordion__content accordion__close">
+                <div class="accordion__header">
+                  <i class="bi bi-filetype-js accordion__icon"></i>
+                  <div>
+                    <h2 class="accordion__title">Frontend</h2>
+                  </div>
+  
+                  <i class="bi bi-arrow-down-short accordion__arrow"></i>
+                </div>
+  
+                <div class="accordion__list grid">
+                  <div class="accordion__data">
+                    <div class="course__titles">
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/HTTP_ Understanding the Web - Alura.pdf">HTML5 e CSS3 parte 1: crie uma página da Web</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          21/08/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course HTML5 and CSS3 part 2_ Positioning, Lists and Navigation - Alura.pdf">HTML5 e CSS3 parte 2: posicionamento, listas e navegação</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          23/08/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course HTML5 and CSS3 Part 3_ Working with forms and tables - Alura.pdf">HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          23/08/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course HTML5 and CSS3 Part 4_ Advancing in CSS - Alura.pdf">HTML5 e CSS3 parte 4: avançando no CSS</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          23/08/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/accessibility part 1_ Making your frontend inclusive - Alura.pdf">Acessibilidade web parte 1: tornando seu front-end inclusivo</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          23/08/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/HTTP_ Understanding the Web - Alura.pdf">HTTP: Entendendo a web por baixo dos panos</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          26/09/2021
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course CSS Architecture_ Uncomplicating the Problems - Alura.pdf">Arquitetura CSS: descomplicando os problemas</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          14/07/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course SEO_ Website Optimization - Alura.pdf">SEO: otimização de sites</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          13/07/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course Flexbox_ position elements on the canvas - Alura.pdf">Flexbox</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          14/07/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course Responsive layouts_ working with mobile layouts - Alura.pdf">Layouts Responsivos: trabalhando com layouts mobile</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          01/11/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course CSS Grid_ simplifying layouts - Alura.pdf">CSS Grid: simplificando layouts </a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          23/11/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course JavaScript for the Web_ Create Dynamic Pages - Alura.pdf">JavaScript para Web: Crie páginas dinâmicas</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          14/07/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course Regular expressions_ magically capturing texts - Alura.pdf">Expressões regulares: capturando textos de forma mágica</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          14/07/2023
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="qualification__title"><a target="_blank" href="./assets/pdf/Course JavaScript on the Web_ Form Validation and HTML5 - Alura.pdf">JavaScript na Web: validação de Formulários e HTML5</a></h3>
+                        <span class="qualification__subtitle">Alura</span>
+                        <div class="qualification__calendar">
+                          <i class="bi bi-calendar-heart"></i>
+                          14/07/2023
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -348,30 +467,12 @@
         <div class="contact__container container grid">
           <div>
             <div class="contact__information">
-              <i class="bi bi-telephone contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Telefone</h3>
-                <a href="tel:+551196540-8849">
-                <span class="contact__subtitle">+55 (11)96540-8849</span>
-                </a>
-              </div>
-            </div>
-            <div class="contact__information">
               <i class="bi bi-envelope contact__icon"></i>
               <div>
                 <h3 class="contact__title">Email</h3>
                 <a href="mailto:bruna.sampaio@icloud.com">
                 <span class="contact__subtitle">bruna.sampaio@icloud.com</span>
                 </a>
-              </div>
-            </div>
-            <div class="contact__information">
-              <i class="bi bi-geo-alt contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Localização</h3>
-                <span class="contact__subtitle"
-                  >Brasil - São Paulo </span
-                >
               </div>
             </div>
           </div>
